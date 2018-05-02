@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrawableActivity">
+
+    <ImageView
+        android:background="@drawable/shape_ic"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:background="@drawable/layer_bg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_bg"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:src="@drawable/inset_bg"
+        android:background="@drawable/rectangle_bg"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/level_img"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/level_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/scale_img"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/scale_bg"
+        android:layout_width="match_parent"
+        android:layout_height="8dp" />
+
+    <ImageView
+        android:id="@+id/clip_img"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/clip_bg"
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <ImageView
+        android:id="@+id/transite_img"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/transite_bg"
+        android:layout_height="45dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/addLevel"
+            android:text="增加Level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/decLevel"
+            android:text="减小Level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/transite"
+            android:text="开始转换"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
