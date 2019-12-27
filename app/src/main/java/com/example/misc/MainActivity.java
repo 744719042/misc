@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button event;
     private Button refresh;
     private Button drawable;
+    private Button rotate;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +52,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         refresh.setOnClickListener(this);
         drawable = (Button) findViewById(R.id.drawable);
         drawable.setOnClickListener(this);
+        rotate = (Button) findViewById(R.id.rotate);
+        rotate.setOnClickListener(this);
     }
 
     @Override
@@ -107,6 +110,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
         } else if (v == drawable) {
             Intent intent = new Intent(this, DrawableActivity.class);
+            startActivity(intent);
+        } else if (v == rotate) {
+            Intent intent = new Intent(this, ScreenTestActivity.class);
             startActivity(intent);
         }
     }
